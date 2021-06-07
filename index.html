@@ -23,7 +23,7 @@
 <body>
     <div id="app" class="">
         <input type="text" placeholder="Type here" v-model="message">
-        <p :title="title">{{ message }}</p>
+        <p>{{ message }}</p>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script>
@@ -31,7 +31,6 @@
             data() {
                 return {
                     message: '',
-                    title: 'Tak-tak',
                 };
             },
         }).mount('#app');
